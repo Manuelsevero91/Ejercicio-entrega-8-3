@@ -1,0 +1,26 @@
+[
+    {
+      "marca": "Chevrolet",
+      "modelo": "Corsa",
+      "anio": 2010, 
+      "motor": "1200",
+      "origen": "Nacional"
+
+    },
+    {
+      "marca": "Peugeot",
+      "modelo": "207",
+      "anio": 2011, 
+      "motor": "1300",
+      "origen": "Nacional"
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Ka",
+        "anio": 2015, 
+        "motor": "1000",
+        "origen": "Nacional"
+    }
+    
+  
+  ]
