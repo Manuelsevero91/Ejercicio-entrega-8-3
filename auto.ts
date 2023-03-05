@@ -70,11 +70,11 @@ export class Auto {
         
        
     }
-    darDeAlta(modelo: Auto, array:Auto[]){
+    darDeAlta(auto: Auto, array:Auto[]){
         if(array.push(auto)){
-            console.log('Se dio de alta ', modelo, ' al listado', array);
+            console.log('Se dio de alta ',  ' al listado', array);
         } else{
-            console.log('El auto', modelo, ' No se ha podido dar de alta');
+            console.log('El auto',  ' No se ha podido dar de alta');
             
         }
     }
@@ -87,10 +87,11 @@ const auto = new Auto('Ford', 'Fiesta', 2018, 1500, 'Nacional');
 const auto1 = new Auto('Honda', 'Fit', 2019, 1500, 'Nacional');
 const registro = new RegistroAutomotor;
 const auto2 = new Auto('Chevrolet', 'Tracker', 2020, 2000, 'Nacional');
-const listado = [auto, auto1,auto2]
-// registro.consultar('auto','auto1', listado)
-// registro.todo(listado)
+const listado = [auto, auto1]
+registro.consultar('Fiesta', listado)
+
 // registro.leerAutos()
 // registro.borrar('Fiesta', listado)
 // registro.actualizar('Fiesta', listado, 'Mondeo')
-registro.darDeAlta('Tracker',listado)
+// registro.darDeAlta(auto2, listado)
+// registro.todo(listado)

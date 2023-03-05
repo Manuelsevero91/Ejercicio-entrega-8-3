@@ -59,12 +59,12 @@ var RegistroAutomotor = /** @class */ (function () {
         var autos = JSON.parse(datos);
         console.log(autos);
     };
-    RegistroAutomotor.prototype.darDeAlta = function (modelo, array) {
+    RegistroAutomotor.prototype.darDeAlta = function (auto, array) {
         if (array.push(auto)) {
-            console.log('Se dio de alta ', modelo, ' al listado', array);
+            console.log('Se dio de alta ', ' al listado', array);
         }
         else {
-            console.log('El auto', modelo, ' No se ha podido dar de alta');
+            console.log('El auto', ' No se ha podido dar de alta');
         }
     };
     return RegistroAutomotor;
@@ -74,10 +74,10 @@ var auto = new Auto('Ford', 'Fiesta', 2018, 1500, 'Nacional');
 var auto1 = new Auto('Honda', 'Fit', 2019, 1500, 'Nacional');
 var registro = new RegistroAutomotor;
 var auto2 = new Auto('Chevrolet', 'Tracker', 2020, 2000, 'Nacional');
-var listado = [auto, auto1, auto2];
-// registro.consultar('auto','auto1', listado)
-// registro.todo(listado)
+var listado = [auto, auto1];
+registro.consultar('Fiesta', listado);
 // registro.leerAutos()
 // registro.borrar('Fiesta', listado)
 // registro.actualizar('Fiesta', listado, 'Mondeo')
-registro.darDeAlta('Tracker', listado);
+// registro.darDeAlta(auto2, listado)
+// registro.todo(listado)
